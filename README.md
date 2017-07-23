@@ -30,7 +30,7 @@ client = Unifi::Client.new({url:"demo.ubnt.com",
 client.list_health
 ```
 It will return something like that:
-```json
+```
 {"data"=>[{"num_adopted"=>118, "num_ap"=>118, "num_disabled"=>0, 
 "num_disconnected"=>0, "num_guest"=>0, "num_pending"=>0, 
 "num_user"=>1180, "rx_bytes-r"=>504, "status"=>"ok", 
@@ -42,7 +42,7 @@ Create new voucher code:
 client.create_voucher({expire: 360, note: 'test-voucher'})
 ```
 Get voucher code, need create_time in seconds:
-```json
+```
 {"data"=>[{"create_time"=>1500804202}], "meta"=>{"rc"=>"ok"}}
 ```
 Get voucher code, need create_time in second:
@@ -50,7 +50,7 @@ Get voucher code, need create_time in second:
 client.stat_voucher(1500804202)
 ```
 It will return something like that:
-```json
+```
 {"data"=>[{"_id"=>"5974746a619469d63475866a", 
 "admin_name"=>"sergey", "code"=>"9224743381", ...}], 
 "meta"=>{"rc"=>"ok"}}
@@ -131,7 +131,7 @@ It will return something like that:
 * stat_sysinfo
 * stat_voucher
 
-You can see the documentation for the methods[here](https://github.com/malle-pietje/UniFi-API-browser/blob/master/phpapi/class.unifi.php).
+You can see the documentation for the methods [here](https://github.com/malle-pietje/UniFi-API-browser/blob/master/phpapi/class.unifi.php).
 
 ## Useful links
 
