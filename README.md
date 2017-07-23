@@ -41,7 +41,7 @@ Create new voucher code:
 ```ruby
 client.create_voucher({expire: 360, note: 'test-voucher'})
 ```
-Get voucher code, need create_time in seconds:
+It will return something like that:
 ```
 {"data"=>[{"create_time"=>1500804202}], "meta"=>{"rc"=>"ok"}}
 ```
